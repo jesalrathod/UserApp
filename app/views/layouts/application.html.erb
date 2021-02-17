@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SolbegUserApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= render 'shared/navbar' %>
+    <p class="alert-success" style="text-align: center; margin-left: 500px; margin-right: 500px;"><%= notice %></p>
+    <p class="alert-danger" style="text-align: center; margin-left: 500px; margin-right: 500px;"><%= alert %></p>
+    <%= yield %>
+  </body>
+</html>
